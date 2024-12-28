@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="zh-tw">
       <body
         className={`${notoSansTC.variable} ${notoSansTC.className} antialiased`}
       >
