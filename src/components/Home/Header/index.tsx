@@ -4,6 +4,7 @@ import Navbar from "./_components/Navbar";
 
 const Header = () => {
   const navMenu: MenuType = [
+    { title: "Home", href: "/" },
     { title: "Week01", href: "/week01" },
     { title: "Week02", href: "#" },
     { title: "Week03", href: "#" },
