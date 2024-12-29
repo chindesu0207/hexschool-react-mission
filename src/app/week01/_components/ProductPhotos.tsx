@@ -15,6 +15,7 @@ const ProductPhotos = ({ product }: ProductPhotosProps) => {
       <div className="relative w-full aspect-square mx-auto">
         <Image
           src={selectedPhoto}
+          sizes="25rem"
           className="object-cover"
           alt={product.title}
           fill
@@ -28,7 +29,12 @@ const ProductPhotos = ({ product }: ProductPhotosProps) => {
               key={index}
               onClick={() => setSelectedPhoto(photo)}
             >
-              <Image src={photo} alt={product.title + index} fill />
+              <Image
+                src={photo}
+                sizes="12.5rem"
+                alt={product.title + index}
+                fill
+              />
             </div>
           );
         })}

@@ -8,7 +8,12 @@ const ProductCard = ({ product, onClick }: ProductCardProps) => {
       onClick={onClick}
     >
       <div className="relative w-full aspect-square">
-        <Image src={product.imageUrl} alt={product.title} fill />
+        <Image
+          sizes="12.5rem"
+          src={product.imageUrl}
+          alt={product.title}
+          fill
+        />
       </div>
       <div className="flex flex-col justify-between py-8">
         <div>

@@ -3,9 +3,11 @@ import { ProductPhotosProps } from "../types";
 const ProductDetail = ({ product }: ProductPhotosProps) => {
   return (
     <div>
-      <div className="text-3xl font-bold">{product.title}</div>
-      <div className="text-gray-500 my-6">{product.description}</div>
-      <div>商品類別: {product.category}</div>
+      <div className="text-3xl font-bold mb-2">{product.title}</div>
+      <span className="rounded-lg bg-orange-500 text-sm font-bold text-muted px-2 py-1">
+        {product.category}
+      </span>
+      <div className="text-gray-500 my-4">{product.description}</div>
       <div>商品規格: {product.content}</div>
       <div className="flex items-center gap-3">
         <span className="text-2xl font-bold text-orange-500 my-6">
