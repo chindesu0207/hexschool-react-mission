@@ -1,6 +1,6 @@
-import { ProductPhotosProps } from "../types";
+import { ProductProps } from "@/types/product";
 
-const ProductDetail = ({ product }: ProductPhotosProps) => {
+const ProductDetail = ({ product }: ProductProps) => {
   return (
     <div>
       <div className="text-3xl font-bold mb-2">{product.title}</div>

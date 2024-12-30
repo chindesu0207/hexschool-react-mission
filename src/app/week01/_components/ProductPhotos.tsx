@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { ProductPhotosProps } from "../types";
+import { ProductProps } from "@/types/product";
 
-const ProductPhotos = ({ product }: ProductPhotosProps) => {
+const ProductPhotos = ({ product }: ProductProps) => {
   const [selectedPhoto, setSelectedPhoto] = useState<string>(product.imageUrl);
   const photos: string[] = [product.imageUrl, ...product.imagesUrl];
 

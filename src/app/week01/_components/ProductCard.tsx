@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { ProductCardProps } from "../types";
+import { ProductProps } from "@/types/product";
 
-const ProductCard = ({ product, onClick }: ProductCardProps) => {
+const ProductCard = ({ product, onClick }: ProductProps) => {
   return (
     <div
       className="grid grid-cols-2 border rounded-lg border-gray-300 cursor-pointer overflow-hidden gap-4"

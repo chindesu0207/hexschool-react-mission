@@ -12,3 +12,8 @@ export interface Product {
   imageUrl: string;
   imagesUrl: string[];
 }
+
+export type ProductProps = {
+  product: Product;
+  onClick?: () => void;
+};
