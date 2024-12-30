@@ -5,6 +5,7 @@ import axios from "axios";
 import ProductCard from "./_components/ProductCard";
 import ProductPhotos from "./_components/ProductPhotos";
 import ProductDetail from "./_components/ProductDetail";
+import Week01Skeleton from "./Week01Skeleton";
 
 const Week01 = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -25,6 +26,7 @@ const Week01 = () => {
 
   return (
     <div className="container w-4/6 mx-auto flex flex-col gap-16">
+      {!tempProduct && <Week01Skeleton />}
       <div>
         {tempProduct ? (
           <div className="grid grid-cols-2 gap-9">
