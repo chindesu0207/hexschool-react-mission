@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-tw">
+    <html className="overflow-y-scroll" lang="zh-tw">
       <body
         className={`${notoSansTC.variable} ${notoSansTC.className} min-h-screen flex flex-col antialiased`}
       >
