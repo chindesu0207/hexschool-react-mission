@@ -4,7 +4,7 @@ import { ProductProps } from "@/types/product";
 const ProductCard = ({ product, onClick }: ProductProps) => {
   return (
     <div
-      className="grid grid-cols-2 border rounded-lg border-gray-300 cursor-pointer overflow-hidden gap-4"
+      className="flex flex-col border rounded-lg border-gray-300 cursor-pointer overflow-hidden"
       onClick={onClick}
     >
       <div className="relative w-full aspect-square">
@@ -15,9 +15,9 @@ const ProductCard = ({ product, onClick }: ProductProps) => {
           fill
         />
       </div>
-      <div className="flex flex-col justify-between py-8">
+      <div className="flex flex-col justify-between p-3">
         <div>
-          <div className="text-xl">{product.title}</div>
+          <div className="text-xl font-bold">{product.title}</div>
           <div className="text-gray-500">{product.content}</div>
         </div>
         <div className="">
